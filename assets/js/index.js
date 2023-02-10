@@ -53,8 +53,3 @@ theme.addEventListener("click", (e) => {
 
     changeTheme(String(document.body.classList[0]));
 })
-let btn = document.querySelector('.wrapper_btn');
-
-btn.addEventListener('click', function(){
-    alert('ВЫ ЗАКАЗАЛИ САЙТ')
-})
