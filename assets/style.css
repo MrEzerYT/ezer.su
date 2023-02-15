@@ -337,3 +337,15 @@ section {
     animation-iteration-count: infinite;
   }
 }
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: unset;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 26px;
+}
