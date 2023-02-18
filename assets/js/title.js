@@ -1,35 +1,18 @@
-var hold
-
-function blinkTitle (opts) {
-  if (!opts) opts = {}
-  var delay = opts.delay || 0
-  var message = opts.message || ''
-  var notifyOffPage = opts.notifyOffPage || false
-  var timeout = opts.timeout || false
-  var title = opts.title || document.title
-
-  if (notifyOffPage) {
-    hold = setInterval(function () {
-      if (document.hidden) blink()
-    }, delay)
-  } else {
-    hold = setInterval(function () {
-      blink()
-    }, delay)
-  }
-
-  function blink () {
-    document.title === title ?
-      document.title = message :
-      document.title = title
-  }
-
-  if (timeout) setTimeout(blinkTitleStop, timeout)
-
+var message = "MrEzer | Главная";
+var message = message+" ";
+i="0";
+var temptitle="";
+var speed="150";
+function titler() {
+if (!document.all&&!document.getElementById) return;
+document.title=temptitle+message.charAt(i);
+temptitle=temptitle+message.charAt(i);
+i++;
+if(i==message.length) {
+i="0";
+temptitle="";
 }
-
-function blinkTitleStop () {
-  clearInterval(hold)
+setTimeout("titler()",speed);
 }
-
-module.exports = blinkTitle
+window.onload=titler;
+// -->
