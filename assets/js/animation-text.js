@@ -1,5 +1,5 @@
 var text = "Моё портфолио";
-var delay = 100; // cкорость
+var delay = 100;
 var elem = document.getElementById("main-title");
  
 var print_text = function(text, elem, delay) {
