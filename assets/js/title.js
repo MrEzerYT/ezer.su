@@ -2,7 +2,7 @@ var message = "MrEzer | Главная";
 var message = message+" ";
 i="0";
 var temptitle="|";
-var speed="120";
+var speed="200";
 function titler() {
 if (!document.all&&!document.getElementById) return;
 document.title=temptitle+message.charAt(i);
