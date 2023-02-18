@@ -1,8 +1,8 @@
 var message = "MrEzer | Главная";
 var message = message+" ";
 i="0";
-var temptitle="";
-var speed="150";
+var temptitle="|";
+var speed="120";
 function titler() {
 if (!document.all&&!document.getElementById) return;
 document.title=temptitle+message.charAt(i);
@@ -15,4 +15,3 @@ temptitle="";
 setTimeout("titler()",speed);
 }
 window.onload=titler;
-// -->
