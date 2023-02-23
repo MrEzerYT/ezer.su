@@ -1,5 +1,16 @@
-/* Section info */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+:root {
+    --bg: #f0f8ff;
+    --default-color-active: #000000;
+    --default-color: #070707;
+    --stroke: rgba(151, 151, 151, 0.87);
+    --primary: rgb(66, 255, 98);
+    --default-shadow: rgb(41, 41, 41);
+    --default-card: #fff;
+}
+
+/* Section info */
 .section-info {
     display: flex;
     flex-direction: column;
