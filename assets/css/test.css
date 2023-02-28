@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap')
+  
+:root {
+    --bg: #f0f8ff;
+    --default-color-active: #000000;
+    --default-color: #070707;
+    --stroke: rgba(151, 151, 151, 0.87);
+    --primary: rgb(66, 255, 98);
+    --default-shadow: rgb(41, 41, 41);
+    --default-card: #fff;
+}
 
 *{
   margin: 0;
@@ -30,4 +40,17 @@ nav{
   color: #3d535f;
   cursor: pointer;
   text-transform: uppercase
+}
+b{
+  font-size: 70px;
+  color: var(--primary);
+}
+.navItems{
+ display: flex;
+}
+.navItems li{
+ margin: 0 15px;
+}
+.navItems li a{
+  font-size: 25px
 }
