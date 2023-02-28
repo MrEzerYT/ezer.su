@@ -43,7 +43,7 @@ nav{
 }
 b{
   font-size: 70px;
-  color: var(--primary);
+  color: #63FF62;
 }
 .navItems{
  display: flex;
