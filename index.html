@@ -28,8 +28,6 @@ limitations under the License.
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo.png" />
     <link rel="apple-touch-icon" href="assets/images/logo.png" />
     <link rel="shortcut icon" href="assets/images/logo.png" />
-    <script type="text/javascript" src="https://raw.githubusercontent.com/flouthoc/blinkTitle.js/master/index.js"></script>
-    <style>body{background-color: dark}</style>
 
     <!-- Primary meta tags -->
     <meta
@@ -165,14 +163,14 @@ limitations under the License.
     <script type="text/javascript" src="assets/js/title.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-                var typed = new Typed('#main-description', {
-        strings: ['Я разработчик.', 'Я майнкрафтер.', 'Я ЮТубер.'],
-        typeSpeed: 100,
-        backSpeed: 100,
-        cursorChar: '  ',
-        shuffle: true,
-        smartBackspace: false,
-        loop: true
+        var typed = new Typed('#main-description', {
+            strings: ['Я разработчик.', 'Я майнкрафтер.', 'Я ЮТубер.'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            cursorChar: '  ',
+            shuffle: true,
+            smartBackspace: false,
+            loop: true
         });
     </script>
     </script>
@@ -181,17 +179,17 @@ limitations under the License.
           opacity: 1;
         }
         .typed-cursor.typed-cursor--blink{
-          animation: typedjsBlink 0.7s infinite;
-          -webkit-animation: typedjsBlink 0.7s infinite;
-                  animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
         }
         @keyframes typedjsBlink{
-          50% { opacity: 0.0; }
+            50% { opacity: 0.0; }
         }
         @-webkit-keyframes typedjsBlink{
-          0% { opacity: 1; }
-          50% { opacity: 0.0; }
-          100% { opacity: 1; }
+            0% { opacity: 1; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1; }
         }
       </style>
 
