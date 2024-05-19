@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --bg: #171717;
+    --primary: rgb(182, 106, 239);
+    --bg-two: rgba(96, 96, 96, 0.16);
+    --bg-three: rgba(255, 255, 255, 0.16);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+    color: #fff
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--bg-two);
+
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, rgb(182, 106, 239), #ecbafa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li, a, button {
+    
+}
+
+.navbar a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 9px 25px;
+}
+
+.navbar a:hover {
+    background-color: var(--bg-three);
+    border-radius: 50px;
+    color: var(--primary)
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+}
+
+.nav_links li a {
+    transition: all .3s ease 0s;
+}
+
+button {
+    color: var(--primary);
+    padding: 9px 25px;
+    background-color: transparent;
+    border-radius: 28px;
+    border: 1px solid var(--primary);
+    outline: none;
+    width: fit-content;
+    transition: .3s ease;
+    font-size: 16px;
+}
+
+i {
+    color: var(--primary)l
+}
+
+button i:hover {
+    color: #fff;
+}
+
+button:hover {
+    background-color: var(--primary);
+    color: #fff
+}
